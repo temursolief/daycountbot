@@ -20,9 +20,7 @@ def start(update: Update, context: CallbackContext):
     msg = 'Hi, {user.mention_markdown_v2()}! \nUse /today to know the cardinal number of the day and week of this year.\n\nTo schedule something, type /schedule first, and then enter the time and the date you wanna be notified in this format:\n12:00 01 10 2022\n\ntime\day\month\year\ \nFrom a new line, enter your message to your future\n For example: /schedule 12:00 10 12 2022\nToday I need to go to the birthday of ma friend'
     update.message.reply_text(msg)
 
-TIME = '^(2[0-3]|[01]?[0-9]):([0-5]?[0-9]):([0-5]?[0-9])$'
-
-TOKEN = "5470929952:AAEwtUHStfTEhwFt1oisEzBTnmfoxZCr4Es"
+TOKEN = "TELEGRAM_TOKEN"
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
