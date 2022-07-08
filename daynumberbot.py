@@ -1,10 +1,10 @@
-import logging
-import pytz
-
 import datetime
+import logging
 
+import pytz
 from telegram import Update
-from telegram.ext import (CallbackContext, CommandHandler, Filters, MessageHandler, Updater)
+from telegram.ext import (CallbackContext, CommandHandler, Filters,
+                          MessageHandler, Updater)
 
 # Enable logging
 logging.basicConfig(
@@ -111,4 +111,4 @@ def main():
     updater.idle()
 
 if __name__ == '__main__':
-    main(
+    main()
